@@ -1,0 +1,133 @@
+@import './colorVars.css';
+
+.add-todo-menu-container {
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+
+    height: auto;
+    max-height: 800px;
+    min-height: 100px;
+
+    border: none;
+    border-radius: 15px;
+    background-color: var(--lighter_light);
+    box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.25);
+
+    margin: 20px;
+    padding: 5px;
+}
+
+.add-todo-menu-container h2 {
+    justify-self: center;
+}
+
+
+.input-box {
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.input-box input {
+    width: 300px;
+    height: 20px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.button-box {
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.button-box button {
+    width: 100%;
+    max-width: 100px;
+    min-width: 80px;
+
+    height: 100%;
+    max-height: 40px;
+    min-height: 30px;
+
+    font-size: 17px;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+.button-box button.close {
+    background-color: var(--exit_red);
+}
+
+.button-box button.close:hover {
+    background-color: var(--mid_orange);
+    transform: scale(1.05);
+}
+
+.button-box button.close:active {
+    background-color: var(--light_orange);
+}
+
+.button-box button.create {
+    background-color: var(--good_green);
+}
+
+.button-box button.create:hover {
+    background-color: var(--vivid_green);
+    transform: scale(1.05);
+}
+
+.button-box button.create:active {
+    background-color: var(--active_green);
+}
+
+.msg {
+    font-size: 20px;
+}
+
+.msg.error {
+    color: red;
+    /* transition: transform 0.3s ease;
+    transform: scale(1); */
+}
+
+.msg.ok {
+    color: green;
+    /* transition: transform 0.3s ease;
+    transform: scale(1); */
+}
+
+/* .msg.error.popup {
+    color: red;
+    transform: scale(1.05);
+}
+
+.msg.ok.popup {
+    color: green;
+    transform: scale(1.05);
+    transform: scale(1);
+} */

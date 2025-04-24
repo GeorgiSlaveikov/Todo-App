@@ -1,0 +1,43 @@
+@import './colorVars.css';
+
+.top-menu-bar {
+    width: 100%;
+    max-height: 65px;
+    min-height: 50px;
+    height: auto;
+
+    background-color: var(--soft_light);
+
+    /* padding: 5px; */
+    margin-bottom: 10px;
+}
+
+.top-menu-bar button {
+    max-height: 65px;
+    min-height: 50px;
+    width: 100%;
+    max-width: 200px;
+    min-width: 150px;
+    /* border-left: 1px solid rgb(255, 219, 122); */
+    border-right: 2px solid rgb(255, 219, 122);
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    background-color: var(--light_yellow);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.top-menu-bar button:hover {
+    background-color: var(--soft_light);
+    cursor: pointer;
+}
+
+.top-menu-bar .exit-app-btn {
+    justify-self: left;
+    background-color: var(--exit_red);
+}
+
+.top-menu-bar .exit-app-btn:hover {
+    background-color: var(--mid_orange);
+}

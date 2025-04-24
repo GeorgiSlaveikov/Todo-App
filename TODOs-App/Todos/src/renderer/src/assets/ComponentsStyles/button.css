@@ -1,0 +1,42 @@
+.btn {
+    width: 100%;
+    min-width: 80px;
+    max-width: 100px;
+
+    height: 100%;
+    min-height: 35px;
+    max-height: 40px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+    cursor: pointer;
+}
+
+.card-action-box .do-btn {
+    background-color: var(--do_btn_color);
+}
+
+.card-action-box .undo-btn {
+    background-color: var(--undo_btn_color);
+}
+
+.do-btn:hover {
+    background-color: var(--do_btn_hover_color);
+}
+
+.do-btn:active {
+    background-color: var(--do_btn_active_color);
+}
+
+.undo-btn:hover {
+    background-color: var( --undo_btn_hover_color);
+}
+
+.undo-btn:active {
+    background-color: var(--undo_btn_active_color);
+}

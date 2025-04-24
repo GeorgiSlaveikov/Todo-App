@@ -1,0 +1,61 @@
+@import './colorVars.css';
+
+
+.card-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: none;
+    border-radius: 16px;
+    background-color: var(--soft_light);
+    box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.25);
+
+    height: 100%;
+    min-width: 200px;
+    max-width: 400px;
+
+    height: 100%;
+    min-height: 50px;
+    max-height: 80px;
+
+    margin-bottom: 15px;
+    padding: 15px;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(1);
+    transform-origin: center center;
+    opacity: 1;
+}
+
+.card-box-shrink {
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.card-box .card-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.card-box .card-info-box p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.card-box .card-info-box .cmpl-msg-txt {
+    font-size: 16px;
+    color: var(--good_green);
+    font-style: italic;
+}
+
+.card-box .card-action-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+

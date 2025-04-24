@@ -1,0 +1,27 @@
+@import './colorVars.css';
+
+  
+.manage-box {
+    padding: 10px;
+    margin: 5px;
+}
+  
+.select-dropdown {
+    margin-left: 20px;
+    max-width: 100px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: var(--light_green);
+}
+  
+.input-search-bar {
+    width: 225px;
+    height: 25px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(72, 72, 72);
+}
+  
+.input-search-bar:hover {
+    border: 2px solid rgb(255, 153, 0);
+}

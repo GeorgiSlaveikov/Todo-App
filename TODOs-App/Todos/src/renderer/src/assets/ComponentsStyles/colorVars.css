@@ -1,0 +1,38 @@
+:root {
+    --green: #3D8D7A;
+    --darker_green: #22574a;
+    --vivid_green: #57ebb0;
+    --light_green: #7fd39e;
+    --active_green: #9fe3b3;
+    --soft_light: #faffdb;
+    --light_yellow: #f2fcb6;
+    --light: #ffffff;
+    --lighter_light: #fcffec;
+    --soft_green: #A3D1C6;
+    --text_color_black: #000000;
+    --text_color_with: #ffffff;
+
+    --good_green: #1fce6e;
+    --bad_orange: #f25618;
+
+    --exit_red: #ff5810;
+    --about-blue: #0650d0;
+
+    --mid_orange: #ff7e46;
+    --light_orange: #ffaf86;
+    
+    --scroll_thumb: #57ebb0;
+    --scroll_track: #d1ffe1;
+    --active_scroll_thumb: #35ff9a;
+}
+
+:root {
+    --do_btn_color: var(--vivid_green);
+    --undo_btn_color: var( --bad_orange);
+
+    --do_btn_hover_color: var(--light_green);
+    --do_btn_active_color: var(--active_green);
+
+    --undo_btn_hover_color: var(--mid_orange);
+    --undo_btn_active_color:var(--light_orange);
+}
