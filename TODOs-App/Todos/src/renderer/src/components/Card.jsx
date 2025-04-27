@@ -31,7 +31,7 @@ function Card({userId, id, title, status}) {
             <div className="card-info-box">
                 {/* <p>User Id: {userId}</p> */}
                 <p>{title}</p>
-                {status && <p className="cmpl-msg-txt">Completed on: {completedTimes[id]}</p>}
+                {status && <p className="cmpl-msg-txt">{completedTimes[id]}</p>}
             </div>
             <div className="card-action-box">
                 <Button btnType={btnType} prompt={btnPrompt} btnAction={btnAction}/>

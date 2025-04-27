@@ -1,0 +1,88 @@
+@import './colorVars.css';
+
+.info-box {
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 800px;
+
+    height: 100%;
+    max-height: 600px;
+    min-height: 450px;
+
+    background-color: beige;
+
+    gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info-box h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.info-box h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.info-box p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-box button {
+    width: 100%;
+    min-width: 80px;
+    max-width: 100px;
+
+    height: 100%;
+    min-height: 35px;
+    max-height: 40px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+    cursor: pointer;
+
+    background-color: var(--do_btn_color);
+}
+
+.info-box button.exit-app {
+    background-color: var(--exit_red);
+}
+
+.info-box button:hover {
+    background-color: var(--do_btn_hover_color);
+}
+
+.info-box button:active {
+    background-color: var(--do_btn_active_color);
+}
+
+.info-box button.exit-app:hover {
+    background-color: var(--mid_orange);
+}
+
+.info-box button.exit-app:active {
+    background-color: var(--light_orange);
+}

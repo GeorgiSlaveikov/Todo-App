@@ -1,0 +1,41 @@
+.additional-box {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    position: absolute;
+    top: 130px;
+}
+
+.additional-box p {
+    font-style: italic;
+    justify-self: center;
+}
+
+.list-element {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding:8px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.list-element .user-id {
+    color: rgb(66, 66, 66);
+}
+
+.list-element .user-name {
+    color: rgb(66, 66, 66);
+}
+
+.api-info {
+    border-bottom: 1px solid gray;
+    margin-bottom: 50px;
+}
+
+.api-info p {
+    color: rgb(111, 111, 111);
+}
+
+.api-info a {
+   color: rgb(66, 66, 66);
+}

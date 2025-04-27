@@ -1,10 +1,15 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, useRef } from "react";
 
 const AppContext = createContext();
 
 export function AppProvider({children}) {   
     const [appMode, setAppMode] = useState('home'); //home, api, custom
     const [operation, setOperation] = useState('idle');
+    const prevAppMode = useRef('home');
+
+    useEffect(() => {
+        prevAppMode.current = appMode;
+    }, [appMode]);
 
     const handleHomeMode = () => {
         setAppMode('home');
@@ -21,7 +26,10 @@ export function AppProvider({children}) {
         console.log("mode swithched to 'custom'");
     };
 
-
+    const handleAnoutMode = () => {
+        setAppMode('about');
+        console.log("mode swithched to 'about'");
+    };
 
     const handleAddTodoMode = () => {
         setOperation('create');
@@ -40,7 +48,7 @@ export function AppProvider({children}) {
 
     const handleSaveFileMode = () => {
         setOperation('file-save');
-        console.log("mode switched to 'custom-create'");
+        console.log("mode switched to 'custom-save'");
     };
 
     const handleIdleTodoMode = () => {
@@ -48,9 +56,9 @@ export function AppProvider({children}) {
         console.log("mode switched to 'idle'");
     };
     
-    const value = {appMode,operation, handleHomeMode, handleApiMode, 
+    const value = {appMode,operation, prevAppMode,handleHomeMode, handleApiMode, 
         handleCustomMode, handleAddTodoMode, handleIdleTodoMode, 
-        handleOpenFileMode, handleCreateFileMode, handleSaveFileMode};
+        handleOpenFileMode, handleCreateFileMode, handleSaveFileMode, handleAnoutMode};
 
     return (
         <AppContext.Provider value={value}>

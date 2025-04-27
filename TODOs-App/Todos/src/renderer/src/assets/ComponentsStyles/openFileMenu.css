@@ -1,0 +1,76 @@
+@import './colorVars.css';
+
+.open-file-menu-container {
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+
+    height: auto;
+    max-height: 800px;
+    min-height: 100px;
+
+    border: none;
+    border-radius: 15px;
+    background-color: var(--lighter_light);
+    box-shadow: 6px 6px 10px 1px rgba(0, 0, 0, 0.25);
+
+    margin: 20px;
+    padding: 5px;
+
+    position: absolute;
+    top: 170px;
+}
+
+.open-file-menu-container h2 {
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-box-open {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.open-file-menu-container .file-box input {
+    border: 1px solid var(--darker_green);
+    border-radius: 6px;
+    height: 25px;
+    width: 300px;
+}
+
+.file-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.file-box button {
+    border: none;
+    background-color: rgb(255, 202, 133);
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.file-box button:hover {
+    background-color: rgb(255, 218, 171);
+}
+
+.file-box button:active {
+    background-color: rgb(255, 237, 212);
+}

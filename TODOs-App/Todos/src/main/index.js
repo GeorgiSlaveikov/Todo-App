@@ -1,13 +1,16 @@
-import { app, shell, BrowserWindow, ipcMain } from 'electron'
+import { app, shell, BrowserWindow, ipcMain, dialog } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
 
+import fs from 'fs';
+import path from 'path';
+
 function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 670,
+    width: 1700,
+    height: 950,
     show: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
@@ -16,8 +19,8 @@ function createWindow() {
       sandbox: false
     }
   })
-
-  mainWindow.setAlwaysOnTop(true, "screen");
+  // easy for debugging
+  // mainWindow.setAlwaysOnTop(true, "screen");
   
   ipcMain.on('app-exit', () => {
     app.quit();  // This cleanly exits the app
@@ -78,3 +81,49 @@ app.on('window-all-closed', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+ipcMain.handle("dialog:openDirectory", async () => {
+  const result = await dialog.showOpenDialog({ properties: ["openDirectory"] });
+  return result.canceled ? null : result.filePaths[0];
+});
+
+ipcMain.handle("file:create", async (event, dir, fileName) => {
+  if (!dir || !fileName) return false;
+  try {
+    const filePath = path.join(dir, fileName);
+    fs.writeFileSync(filePath, JSON.stringify({}));
+    return true;
+  } catch (err) {
+    console.error("Error creating file:", err);
+    return false;
+  }
+});
+
+ipcMain.handle("dialog:openFile", async () => {
+  const result = await dialog.showOpenDialog({
+    filters: [{ name: "JSON", extensions: ["json"] }],
+    properties: ["openFile"],
+  });
+  return result.canceled ? null : result.filePaths[0];
+});
+
+ipcMain.handle('writeJsonFile', async (event, path, jsonData) => {
+  try {
+    await fs.promises.writeFile(path, jsonData, 'utf-8');
+    console.log("File saved!");
+    return true;
+  } catch (error) {
+    console.error("Failed to write file:", error);
+    return false;
+  }
+});
+
+ipcMain.handle("file:readJson", async (event, filePath) => {
+  try {
+    const fileContents = fs.readFileSync(filePath, "utf-8");
+    return JSON.parse(fileContents);
+  } catch (err) {
+    console.error("Error reading JSON file:", err);
+    return null;
+  }
+});

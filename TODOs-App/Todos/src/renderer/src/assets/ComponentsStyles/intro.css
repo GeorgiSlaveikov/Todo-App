@@ -1,8 +1,8 @@
 @import './colorVars.css';
 
 body {
-    /* background-color: var(--lighter_light); */
     background-image: url('./src/bg.jpg');
+    background-color: var(--lighter_light);
     background-size: cover;         
     background-repeat: no-repeat;     
     background-position: center;      
@@ -29,6 +29,8 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: beige;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -121,6 +123,14 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operation-btn p {
+    font-size: 18px;
 }
 
 .operation-btn:hover {
@@ -140,6 +150,8 @@ body {
     padding: 5px;
     font-size: 15px;
     text-align: center;
+    width: 200px;
+    height: 100px;
 }
 
 .choice-box h2 {

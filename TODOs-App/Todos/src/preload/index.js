@@ -20,5 +20,10 @@ if (process.contextIsolated) {
 }
 
 contextBridge.exposeInMainWorld('electronAPI', {
-  exitApp: () => ipcRenderer.send('app-exit')
+  exitApp: () => ipcRenderer.send('app-exit'),
+  pickDirectory: () => ipcRenderer.invoke("dialog:openDirectory"),
+  createJsonFile: (dir, fileName) => ipcRenderer.invoke("file:create", dir, fileName),
+  openFileDialog: () => ipcRenderer.invoke("dialog:openFile"),
+  writeJsonFile: (path, jsonData) => ipcRenderer.invoke('writeJsonFile', path, jsonData),
+  readJsonFile: (filePath) => ipcRenderer.invoke("file:readJson", filePath)
 });
