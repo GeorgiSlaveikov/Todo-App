@@ -30,7 +30,7 @@ Todos, които са били предварително отбелязани 
 ![pendingCount](https://github.com/user-attachments/assets/9289bad8-278b-4ccf-b4d1-72e7a3e14416) ![CompletedCount](https://github.com/user-attachments/assets/b3cbd771-8e7c-4e5c-9498-722726cc6341)
 
 Горната част на менюто съдържа лентата със бутони.
-Бутон Start Page, връща потербителя към началната страница/
+Бутон Start Page, връща потребителя към началната страница.
 Бутон Refresh, презарежда страницата и заедно с това и todos.
 Бутон Exit служи за изход от програмата.
 ![fetchMenuButtons](https://github.com/user-attachments/assets/463bd736-75fa-4e3d-bce1-f5177a4154dc)
@@ -42,9 +42,20 @@ Sort by username (Сортиране по име на потребител, по
 Sort by title (сортиране по заглавие на todo, по азбучен ред в низходящ и възходящ ред). Засяга само колоната, над която се намира.
 Sort by date (сортиране по дата на завършване, в низходящ и възходящ ред). Засяга само колоната за завършени todos.
 
+Меню за работа с файлове
+![fileBaseMenu](https://github.com/user-attachments/assets/caf41332-3187-4cd0-9593-c516a0bed943)
+
+Горната част на менюто съдържа лентата със бутони.
+Бутон Start Page, връща потребителя към началната страница.
+Бутон Exit служи за изход от програмата.
+Бутон Save File служи за запазване на промените по списъците с todos в отворения файл. Ако не е отворен файл, няма да се запазят промените.
+Бутон Create Todo служи за създаване на нови todos.
+Бутон New File служи за създаване на нови .json файлове.
+Бутон Open File служи за отваряне на вече съществуващ .json файл. Ако има записани todos в него, то те се зареждат.
+![fileMenuButtons](https://github.com/user-attachments/assets/98488253-7303-48d6-bf27-af3228dd2471)
 
 
-
+![fileMenuButtons](https://github.com/user-attachments/assets/60836c74-49ae-4033-b483-97810910cc73)
 
 
 
