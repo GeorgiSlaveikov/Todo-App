@@ -63,8 +63,8 @@ Sort by date (сортиране по дата на завършване, в н�
 ![OpenFile](https://github.com/user-attachments/assets/76eeab92-ecba-4de7-80c2-b0e71786d078)
 ![createNewFile](https://github.com/user-attachments/assets/59d3c245-4756-4764-a8e3-91f03988fb6e)
 
-
-
+Долната част на страницата показва, кой файл е отворен (ако изобщо е отворен такъв) и дали данните за запазени. 
+![SaveFile](https://github.com/user-attachments/assets/13a90d2f-fad5-4c89-a38a-2ff32d0bd4e4)
 
 
 
