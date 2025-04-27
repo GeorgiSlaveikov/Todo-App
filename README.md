@@ -2,7 +2,7 @@
 Todo app (Task handle application) created using electron.js, react, html, css, javascript. You can create your own tasks, save them in local .json files, open .json files (load todos). 
 Other option is to load todos from an API.
 
-Проектът представлява десктоп приложение за windows.
+Проектът представлява десктоп приложение за windows. Управление на todos (задачи). 
 
 Стъпки за стартиране на приложението (2 начина).
 1. Начин - чрез командния прозорец: 
