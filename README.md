@@ -54,8 +54,11 @@ Sort by date (сортиране по дата на завършване, в н�
 Бутон Open File служи за отваряне на вече съществуващ .json файл. Ако има записани todos в него, то те се зареждат.
 ![fileMenuButtons](https://github.com/user-attachments/assets/98488253-7303-48d6-bf27-af3228dd2471)
 
+Това са менютата за създаване на todos, създаване на файл, отваряне на файл.
+![createTodo](https://github.com/user-attachments/assets/1d78f67f-0ae2-4751-8385-6bad9a4ac0b1)
+![OpenFile](https://github.com/user-attachments/assets/76eeab92-ecba-4de7-80c2-b0e71786d078)
+![createNewFile](https://github.com/user-attachments/assets/59d3c245-4756-4764-a8e3-91f03988fb6e)
 
-![fileMenuButtons](https://github.com/user-attachments/assets/60836c74-49ae-4033-b483-97810910cc73)
 
 
 
