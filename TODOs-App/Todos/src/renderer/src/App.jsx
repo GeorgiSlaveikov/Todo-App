@@ -60,8 +60,6 @@ function App() {
           <CompletedTodosMenu/>
           <DisplayBox title="Completed" todos={completedTodos} count={completedTodos.length} statusLabel="completed tasks"/>
         </div>
-          {/* <DisplayBox title="Pending" todos={incompleteTodos} count={incompleteTodos.length} statusLabel="pending tasks"/> */}
-          {/* <DisplayBox title="Completed" todos={completedTodos} count={completedTodos.length} statusLabel="completed tasks"/> */}
         {appMode === 'custom' && <div className='controller-column'>
           {(operation === 'create' && appMode === 'custom') && <AddTodoMenu/>}
           {(operation === 'file-create' && appMode === 'custom') && <CreateFileMenu/>}

@@ -41,7 +41,7 @@ html, body {
   }
 }
 
-.incompleted-todos-menu {
+/* .incompleted-todos-menu {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -54,14 +54,16 @@ html, body {
 }
 
 .controller-column {
-  display: grid;
+  display: flex;
   grid-template-rows: auto;
-}
-
-/* 
-@media (max-height: 368px) {
-  .main-container {
-    flex-direction: row;
-    align-items: center;
-  }
 } */
+
+.incompleted-todos-menu,
+.completed-todos-menu,
+.controller-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0; 
+  overflow: auto; 
+}
